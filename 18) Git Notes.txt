@@ -4,4 +4,39 @@ git init = to create a git repository
 ls -a = to check hidden files via cmd
 git status = to check which files in the staging area (tracked or untracked files)
 git add {file name} = to add files to the staging area
+git add. = to add all files in the folder instead of a specific one
 git status = again to check whether the file is added to the staging area
+git commit -m "Commit messsage" = commit to the master branch. -m flag is to add a message for the changes
+git log = to check the current commit
+
+after making file changes
+
+git status = again to see which files have changed
+
+git diff {file name} = to check what differences have been made
+
+git checkout {file name} = to rollback
+
+
+//// create a new repo in Github then use below command to push files to GitHub///////////////
+git remote add origin {url provided by Github}
+git push -u origin main
+
+
+//////to remove everything from staging area//////////
+ git rm --cached -r . (-r = recursive) (. = means all)
+
+///////gitignore//////////
+1) create a .gitignore file
+2) then put the filename that u wanna ignore inside it
+3) the file will not be included in staging area or commit
+
+
+///////////git clone/////////////
+1) git clone {url copied from github repos}
+
+
+
+///////git branch////////////////
+git branch {name of the branch} = create a new branch
+git checkout {name of the branch} = move to the branch
