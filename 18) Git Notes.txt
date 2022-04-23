@@ -1,0 +1,7 @@
+Steps.....
+
+git init = to create a git repository
+ls -a = to check hidden files via cmd
+git status = to check which files in the staging area (tracked or untracked files)
+git add {file name} = to add files to the staging area
+git status = again to check whether the file is added to the staging area
